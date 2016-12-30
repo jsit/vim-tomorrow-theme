@@ -235,7 +235,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim Highlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
-	highlight LineNr term=bold cterm=NONE ctermfg=LightGray ctermbg=NONE gui=NONE guifg=LightGray guibg=NONE
+	call <SID>X("LineNr", s:window, s:background, "")
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:brightyellow, "")
